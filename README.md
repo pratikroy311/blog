@@ -1,1 +1,1 @@
-# A blog Application using python django framework
+# A simple blog api using python django framework
