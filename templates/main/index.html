@@ -4,6 +4,15 @@
 {% endblock %}
 {% block content %}
     <h1>Blog Application</h1>
-
+    <h3>Latest Articles </h3>
+    <ul>
+        {% for article in latest_articles %}
+            <li>
+                <a href="{% url 'get_article' article.id %}" >
+                    {{ article.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 
 {% endblock %}
